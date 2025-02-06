@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+span {
+  color: #1C6DD0;
+  font-weight: bolder;
+}
+
+.container {
+  margin-inline: auto;
+  width: 1200px;
+}
+
 /* Nav  */
 nav {
   background-color: #1C6DD0;
@@ -49,16 +63,69 @@ nav ul li button {
 
 nav ul li button:hover,
 nav ul li button:active {
-  background-color: #4286d8;
+  background-color: #dbebff;
 }
 
 nav li {
   list-style: none;
 }
 
-.container {
-  margin-inline: auto;
-  width: 1200px;
+/* Header */
+
+header {
+  background-color: #3674B5;
+  color: #fff;
+}
+
+header .container {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+header span {
+  color: black;
+}
+
+/* About Me */
+
+#about-me .container {
+  display: flex;
+  align-items: center;
+  padding-block: 80px;
+  gap: 100px;
+}
+
+#about-me img {
+  width: 400px;
+  height: 400px;
+}
+
+#about-me h1 {
+  font-size: 3rem;
+}
+
+#about-me p {
+  font-size: 1.2rem;
+}
+
+/* My-Skills */
+
+#my-skills {
+  background-color: #3674B5;
+  padding: 500
 }
 
 /* Footer */
@@ -107,5 +174,10 @@ footer {
 
   #nav-links ul {
     display: none;
+  }
+
+  #about-me .container {
+    flex-flow: column;
+    gap: 10px;
   }
 }
