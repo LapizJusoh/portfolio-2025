@@ -24,6 +24,15 @@ span {
 nav {
   background-color: #1C6DD0;
   color: #fff;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+nav.active {
+  top: -80px;
 }
 
 nav .container {
@@ -32,6 +41,7 @@ nav .container {
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 
 nav #burger-button {
@@ -59,11 +69,13 @@ nav ul li button {
   font-size: .8rem;
   cursor: pointer;
   border: none;
+  transition: 0.5s;
 }
 
 nav ul li button:hover,
 nav ul li button:active {
   background-color: #dbebff;
+  color: black;
 }
 
 nav li {
